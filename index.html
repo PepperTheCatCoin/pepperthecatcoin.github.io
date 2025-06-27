@@ -4,21 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>$PEPPER – The Cat Coin</title>
+  <link rel="icon" href="pepper.png" type="image/png">
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0a0a0a;
       color: #e0e0e0;
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(90deg, #0a0a0a, #002d3d);
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     header img {
-      max-width: 200px;
-      border-radius: 10px;
+      max-width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
     }
     h1 {
       margin-top: 1rem;
@@ -26,22 +29,46 @@
       color: #7fe07f;
     }
     .content {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #7fe07f;
     }
     a {
       color: #7fe07f;
       text-decoration: none;
     }
+    a:hover {
+      text-decoration: underline;
+    }
+    .chart-container {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .chart-container iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+    }
+    .gecko-logo {
+      margin-top: 0.5rem;
+      width: 120px;
+      opacity: 0.8;
+    }
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #555;
+      color: #777;
     }
   </style>
 </head>
@@ -53,7 +80,7 @@
   <div class="content">
     <div class="section">
       <p>
-        $PEPPER is more than just a token – it's a story. A quiet place in the chaos. A tribute to honesty, calm momentum, and real community.
+        $PEPPER is more than just a token – it's a story. A quiet place in the chaos. A tribute to honesty, calm momentum, and real community.<br>
         No hype. No promises. Just Pepper.
       </p>
     </div>
@@ -64,22 +91,29 @@
          <strong>Contract:</strong> <code>0xa2d3dcbd3a409cf73810ba4e1f7fb6b46f38395c</code><br />
          <strong>Fee:</strong> 1% per transaction<br />
          <strong>Presale:</strong> None<br />
-         <strong>Liquidity:</strong> First pool soon (2M PEPPER + 0.5 BNB)</p>
+         <strong>Liquidity:</strong> 2M PEPPER + 0.5 BNB</p>
     </div>
     <div class="section">
       <h2>Buy $PEPPER</h2>
       <p>
-        You can buy $PEPPER on PancakeSwap:
-        <br /><a href="https://pancakeswap.finance/swap?outputCurrency=0xa2d3dcbd3a409cf73810ba4e1f7fb6b46f38395c" target="_blank">
+        You can buy $PEPPER on PancakeSwap:<br />
+        <a href="https://pancakeswap.finance/swap?outputCurrency=0xa2d3dcbd3a409cf73810ba4e1f7fb6b46f38395c" target="_blank">
           Swap on PancakeSwap
         </a>
       </p>
     </div>
     <div class="section">
+      <h2>Live Market View</h2>
+      <div class="chart-container">
+        <iframe src="https://www.geckoterminal.com/bsc/pools/0xef9bbb1544cb892d92a8c86ac6f35061dff6761b?embed=1"></iframe>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/CoinGecko_logo.svg/2560px-CoinGecko_logo.svg.png" alt="GeckoTerminal Logo" class="gecko-logo" />
+      </div>
+    </div>
+    <div class="section">
       <h2>Follow the Mission</h2>
       <p>
-        The journey continues on X:
-        <br /><a href="https://x.com/PepperTheCatCoin" target="_blank">@PepperTheCatCoin</a>
+        The journey continues on X:<br />
+        <a href="https://x.com/PepperTheCatCoin" target="_blank">@PepperTheCatCoin</a>
       </p>
     </div>
   </div>
